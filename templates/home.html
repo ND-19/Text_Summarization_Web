@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="http://127.0.0.1:5000/predict" method="post">
+
+        <div style="width: max-content; margin: 0 auto; font-size: 12;">
+            <label>Enter Text:</label>
+            <!-- <textarea type="text" name="text" style="height: 300px; width: 500px;">
+                {{article}}
+            </textarea> -->
+            
+                <textarea style = "display: block;width: 500px;height: 300px; border: 1px solid black; border-radius: 6px; padding: 3px;" type="text" name="text">
+                    {{article}}
+                </textarea>
+           
+            <p><input type="submit" value="submit" /></p>
+            
+            <label>Summary: </label>
+                <textarea style = "display: block;width: 500px;height: 200px; border: 0.5px solid black; border-radius: 6px; padding: 3px; --placeholder:'Your sentence here..';" type="text" name="summary">
+                    {{summ}}
+                </textarea>
+        </div>
+    </form>
+</body>
+
+</html>
